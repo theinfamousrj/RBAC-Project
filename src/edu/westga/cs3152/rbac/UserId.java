@@ -83,4 +83,15 @@ public class UserId {
 		}
 		return "Douglasville";
 	}
+	
+	/**
+	 * returns the hash code for the specific userid
+	 * 
+	 * Precondition: this userid is a valid userid
+	 * @return a positive hash code based on the userid
+	 */
+	public int hashCode()
+	{
+		return Math.abs(this.id.hashCode());
+	}
 }
