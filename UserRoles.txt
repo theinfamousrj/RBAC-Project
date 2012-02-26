@@ -1,0 +1,3 @@
+csm65490:nurse,administrator
+ctm21392:nurse,visitor
+del24690:doctor,visitor

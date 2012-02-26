@@ -1,3 +1,36 @@
 RBAC Project:
 
 The Web makes information easily accessible to the public. However, in many cases the information should be accessed in a selective way. For example, credit card information should be accessible by a company employee that handles commercial transactions of the company. The same information should not be accessible by customers of the company. A widely‐used way to handle access control is role‐based access control (RBAC). In this project will implement the part of the so‐called Policy Decision Point (PDP) that decides whether a request for data access is granted based on a simplified RBAC model introduced by Damiani et al. (2002)*.
+
+Classes:
+-UserRoles
+--File theFile
+--Map<String, ArrayList<String>> userRoles
+--void UserRoles()
+--void UserRoles(File theFile)
+--void addWithRoleList(String userid, ArrayList<String> roles)
+--void addWithRoleString(String userid, String role)
+--void remove(String userid)
+--boolean contains(String userid)
+--ArrayList<String> getValues(String userid)
+--int getSize()
+--void buildDictionary()
+
+-UserRolesTest
+--ArrayList<String> roleList
+--UserRoles roles
+--UserId userid
+--UserId userid2
+--UserId userid3
+--void shouldNotContainAnyUserIdWhenGivenNullRoleList()
+--void shouldContainCorrectUserIdAndRoleWhenGivenUserIdAndRoleAsAString()
+--void shouldContainCorrectUserIdAndRoleWhenGivenUserIdAndRoleAsAnArrayList()
+--void shouldContainOnlyOneUserIdWhenAddMultipleEqualUserIds()
+--void shouldHaveMultipleRolesForUserIdWhenAddedWithMultipleRoles()
+--void shouldNotContainAnyUserIdWhenGivenNullRoles()
+--void shouldContainThreeUserIdsWhenAddThreeUserIds()
+--void shouldRemoveCorrectUserIdAndRoleWhenGivenUserIdToRemove()
+--void shouldNotRemoveAnyUserIdWhenRemovingUserIdThatIsNotInDictionary()
+--void shouldHaveThreeUserIdsEachWithCorrectUserRoles()
+--void setup()
+--void addARoleToList(String roleStr)
