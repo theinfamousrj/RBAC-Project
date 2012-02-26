@@ -94,4 +94,17 @@ public class UserId {
 	{
 		return Math.abs(this.id.hashCode());
 	}
+	
+	/**
+	 * 
+	 */
+	public boolean equals(Object o)
+	{
+		UserId userToCompare = (UserId)o;
+		if (this.id.equals(userToCompare.id)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
