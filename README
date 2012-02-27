@@ -2,6 +2,9 @@ RBAC Project:
 
 The Web makes information easily accessible to the public. However, in many cases the information should be accessed in a selective way. For example, credit card information should be accessible by a company employee that handles commercial transactions of the company. The same information should not be accessible by customers of the company. A widely‐used way to handle access control is role‐based access control (RBAC). In this project will implement the part of the so‐called Policy Decision Point (PDP) that decides whether a request for data access is granted based on a simplified RBAC model introduced by Damiani et al. (2002)*.
 
+User file format:
+UserId:Role,Role,Role,...,Role
+
 Classes:
 -UserId
 --int hashCode()

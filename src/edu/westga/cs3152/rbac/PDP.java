@@ -1,6 +1,5 @@
 package edu.westga.cs3152.rbac;
 
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.StringTokenizer;
@@ -163,6 +162,7 @@ public class PDP
     {
     	boolean isGranted;
     	String role = null;
+    	
     	
     	
     	Rule accessRule = new Rule(role, object, access);

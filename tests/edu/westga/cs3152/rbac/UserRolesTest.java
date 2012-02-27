@@ -20,7 +20,7 @@ public class UserRolesTest {
 	UserId userid2;
 	UserId userid3;
 	
-	//Testing add()
+	//Testing add():
 	
 	@Test
 	public void shouldNotContainAnyUserIdWhenGivenNullRoleList() {
@@ -111,6 +111,7 @@ public class UserRolesTest {
 	}
 	
 	//Testing file import
+	
 	@Test
 	public void shouldHaveThreeUserIdsEachWithCorrectUserRoles() {
 		File theFile = new File("./UserRoles.txt");
